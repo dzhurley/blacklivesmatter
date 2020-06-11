@@ -257,6 +257,9 @@ function setup() {
       resource =>
         `<a href="${resource.url}" target="_blank" rel="noopener noreferrer">${resource.name}</a>`,
     )
+    .concat(
+      `<a class="source" href="https://github.com/dzhurley/blacklivesmatter" target="_blank" rel="noopener noreferrer">(SOURCE)</a>`,
+    )
     .join('');
 
   const toggle = document.querySelector('.toggle');
