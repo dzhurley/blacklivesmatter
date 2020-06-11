@@ -167,7 +167,7 @@ const animateCall = () => {
 
     const x = random(100, width - 100);
     const y = random(100, height - 100);
-    el.style.left = `calc(10vw + ${x}px)`;
+    el.style.left = `calc(12.5vw + ${x}px)`;
     el.style.top = `${y}px`;
     el.style.opacity = 0;
 
@@ -241,7 +241,7 @@ const setupPeople = () => {
 };
 
 function setup() {
-  createCanvas(windowWidth * 0.5, windowHeight);
+  createCanvas(windowWidth * 0.75, windowHeight);
   ul.innerHTML = shuffle(names).reduce(
     (list, name) => list + `<li>${name}</li>`,
     '',
@@ -289,7 +289,7 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth * 0.5, windowHeight);
+  resizeCanvas(windowWidth * 0.75, windowHeight);
   people = [];
   clear();
   setupPeople();
