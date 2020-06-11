@@ -136,6 +136,15 @@ const resources = [
   { url: 'https://colorofchange.org/', name: 'COLOR OF CHANGE' },
   { url: 'https://cpj.org/', name: 'COMMITTEE TO PROTECT JOURNALISTS' },
   { url: 'https://www.formyblock.org/', name: 'MY BLOCK, MY HOOD, MY CITY' },
+  { url: 'https://www.paalf.org/', name: 'PAALF' },
+  { url: 'https://www.blackvotersmatterfund.org/', name: 'BLACK VOTERS MATTER' },
+  { url: 'https://www.showingupforracialjustice.org/', name: 'SHOWING UP FOR RACIAL JUSTICE' },
+  { url: 'https://www.nationalcouncil.us/', name: 'NATIONAL COUNCIL FOR INCARCERATED AND FORMERLY INCARCERATED WOMEN AND GIRLS' },
+  { url: 'https://www.localmedia.org/journalism-fund-for-black-newspapers/', name: 'THE BLACK JOURNALISM FUND' },
+  { url: 'https://www.spirithouse-nc.org/harm-free-zone', name: 'HARM FREE ZONE' },
+  { url: 'https://www.blackfoodjustice.org/', name: 'NATIONAL BLACK FOOD & JUSTICE ALLIANCE' },
+  { url: 'https://nicjr.org/', name: 'THE NATIONAL INSTITUTE FOR CRIMINAL JUSTICE REFORM' },
+  { url: 'https://www.pciti.net/', name: 'THE PROFESSIONAL COMMUNITY INTERVENTION TRAINING INSTITUTE' },
 ];
 
 // https://dribbble.com/shots/3912686-Skin-tone-colors
