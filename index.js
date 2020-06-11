@@ -148,6 +148,9 @@ const tones = [
 
 const diameter = 42;
 
+const ua = navigator.userAgent.toLowerCase();
+const isSafari = ua.indexOf('safari') > -1 && ua.indexOf('chrome') < 0;
+
 const signRate = 0.04;
 let animatingCall = false;
 let signScroll = 0;
@@ -201,12 +204,15 @@ const loop = time => {
         animatingCall = false;
       }
     }
-  }
 
-  const li = ul.querySelector('li');
-  if (li.getBoundingClientRect().top < -200) {
-    li.remove();
-    ul.appendChild(li);
+    if (crowdScroll % 42 === 0) {
+      const li = ul.querySelector('li');
+      li.remove();
+      ul.appendChild(li);
+      if (isSafari) {
+        ul.scrollTop -= li.getBoundingClientRect().height + 16;
+      }
+    }
   }
 
   if (crowdScroll < 0 && crowdScroll % 100 === 0) {
